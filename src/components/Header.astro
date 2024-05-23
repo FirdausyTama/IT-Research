@@ -1,23 +1,56 @@
 ---
 import { Image } from "astro:assets";
----
 
-<header
-  class="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto"
->
-  <a href="/" class="flex items-center gap-x-4">
-    <img
-      src="/iptek.jpeg"
-      width={60}
-      height={60}
-      alt="IT Research"
-      class="rounded-2xl aspect-thumbnail object-cover"
-    />
-    <p class="uppercase text-3xl text-zinc-900 font-bold">IT Research</p>
-  </a>
-  <ul class="flex gap-x-8">
-    <li><a href="/" class="text-teal-900 font-bold">Home</a></li>
-    <li><a href="/about" class="text-teal-900 font-bold">About</a></li>
-    <li><a href="/blog" class="text-teal-900 font-bold">Blog</a></li>
-  </ul>
-</header>
+
+---
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-weight: bold;
+    color: #065f5b;
+  }
+  </style>
+  
+  <header class="navbar">
+    <a href="/" class="flex items-center gap-x-4">
+      <img
+        src="/iptek-logo-fav.jpeg"
+        width="60"
+        height="60"
+        alt="IT Research"
+        class="rounded-2xl aspect-thumbnail object-cover"
+      />
+      <p class="uppercase text-sm md:text-3xl text-zinc-900 font-bold">IT Research</p>
+    </a>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="/" class="text-teal-900 font-bold">Home</a></li>
+      <li><a href="/about" class="text-teal-900 font-bold">About</a></li>
+      <li><a href="/blog" class="text-teal-900 font-bold">Blog</a></li>
+    </ul>
+  </header>
+
+  

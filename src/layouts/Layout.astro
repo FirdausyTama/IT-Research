@@ -16,14 +16,15 @@ const { title, description = "Astro description", image = "/images/band.jpg" } =
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/jpg" href="/iptek-logo-fav.jpeg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image} />
 		<ViewTransitions/>
 		<title>{title}</title>
 	</head>
 	<body class="bg-gray-100 text-gray-800">
-		<Header/>
+		<Header />
 		<slot />
+		
 	</body>
 </html>

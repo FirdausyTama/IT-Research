@@ -9,17 +9,38 @@ import { Image } from 'astro:assets';
 <Layout title="About Us">
 	<Main>
 		<H1 text='Tentang IT Research'/>
-		<Image src={IPTEK} alt="Foto 2"/>
+		<Image class="timiptek"src={IPTEK} alt="Foto 2"/>
 		<div class="card">
 			<p>IT Research merupakan salah satu program kerja di dalam divisi Iptek, yang mana penanggung jawab IT Research adalah Atama. IT Research berguna untuk menyebarkan informasi tentang teknologi yang sedang berkembang di dunia saat ini. Melalui IT Research, teman-teman bisa mendapatkan update tentang teknologi terbaru di dunia, contohnya seperti Devin AI dan Starlink.</p>
 		</div>
+		
+		<footer class="bg-white rounded-lg shadow:bg-transparent-900 m-4">
+			<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+				<div class="sm:flex sm:items-center sm:justify-between">
+				</div>
+				<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+				<span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 font-bold">© 2024 <a href="#" class="hover:underline">IT-Research</a>. All Rights Reserved.</span>
+			</div>
+		  </footer>
 	</Main>
 
 </Layout>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');	
-	
+	.timiptek {
+		animation: fadeIn 1.5s ease-in-out forwards; /* Add fade-in animation */
+    }
+
+	@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        
+	}
 	.card {
 			background-color: #fff;
 			border: 1px solid #ddd;
@@ -38,4 +59,8 @@ import { Image } from 'astro:assets';
 				font-style: normal;
 				text-align: justify;
       }
+
+	footer {
+      background: transparent;
+    }  
 	</style>

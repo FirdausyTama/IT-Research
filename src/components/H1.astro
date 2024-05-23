@@ -5,4 +5,10 @@ type Props = {
 const {text}  = Astro.props;
 ---
 
-<h1 class="text-6xl text-teal-900 font-bold mb-10">{text}</h1>
+<h1 class="text-3xl md:text-6xl text-teal-900 font-bold mb-10 text-center ">{text}</h1>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+    h1 {
+        font-family: "Poetsen One", sans-serif
+    }
+</style>
