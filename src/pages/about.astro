@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import H1 from '../components/H1.astro';
+import Main from "../components/Main.astro";
+import IPTEK from "../assets/IPTEK.png"
+import { Image } from 'astro:assets';
+---
+
+<Layout title="About Us">
+	<Main>
+		<H1 text='Tentang IT Research'/>
+		<Image src={IPTEK} alt="Foto 2"/>
+		<div class="card">
+			<p>IT Research merupakan salah satu program kerja di dalam divisi Iptek, yang mana penanggung jawab IT Research adalah Atama. IT Research berguna untuk menyebarkan informasi tentang teknologi yang sedang berkembang di dunia saat ini. Melalui IT Research, teman-teman bisa mendapatkan update tentang teknologi terbaru di dunia, contohnya seperti Devin AI dan Starlink.</p>
+		</div>
+	</Main>
+
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');	
+	
+	.card {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			padding: 16px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-top: 16px;
+			margin-bottom: 30px;
+	}
+
+	.card p {
+				color: black;
+        font-size: 16px;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 300;
+				font-style: normal;
+				text-align: justify;
+      }
+	</style>

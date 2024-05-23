@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header
+  class="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto"
+>
+  <a href="/" class="flex items-center gap-x-4">
+    <img
+      src="/iptek.jpeg"
+      width={60}
+      height={60}
+      alt="IT Research"
+      class="rounded-2xl aspect-thumbnail object-cover"
+    />
+    <p class="uppercase text-3xl text-zinc-900 font-bold">IT Research</p>
+  </a>
+  <ul class="flex gap-x-8">
+    <li><a href="/" class="text-teal-900 font-bold">Home</a></li>
+    <li><a href="/about" class="text-teal-900 font-bold">About</a></li>
+    <li><a href="/blog" class="text-teal-900 font-bold">Blog</a></li>
+  </ul>
+</header>

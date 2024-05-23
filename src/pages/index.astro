@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+import H1 from '../components/H1.astro';
+import Main from "../components/Main.astro";
+import img2 from "../assets/img2.png";
+import ITContact from "../assets/ITContact.png";
+import webkmti from "../assets/webkmti.png"
+import studymore from "../assets/studymore.png"
+import { Image } from 'astro:assets';
+---
+
+<Layout title="IPTEK | IT Research">
+    <Main>
+        <H1 text='Welcome'/>
+      <div class="flex" style="border-radius: 50px; color: black;">
+        <Image class="round-photo" src={img2} alt="foto ganteng"/>
+      </div>
+      <h2 class="text-sky-400 text-center mt-10 animate-heading" style="color: black; font-size: 30px;">PJ: Atama Cahya El-Firdausy</h2>
+      <div class="mb-10 card">
+        <h3 style="        font-family: 'Poppins', sans-serif;
+				font-weight: 300;
+				font-style: normal;">IT RESEARCH</h3>
+        <p style="        font-family: 'Poppins', sans-serif;
+				font-weight: 300;
+				font-style: normal;">Merupakan salah satu proker dari divisi IPTEK berfokus membahas berbagai macam berita terkait teknologi lokal maupun dunia, yang sedang ramai di perbincangkan di dunia teknologi.</p>
+      </div>
+      <div class="photo-cards">
+        <div class="photo-card">
+            <a href="https://kmti.tech/" class=""> 
+          <Image src={webkmti} alt="Foto 1"/>
+          <p>Website Kmti</p>
+            </a>
+        </div>
+        <div class="photo-card">
+            <a href="https://itresearchkmti.blogspot.com/" class=""> 
+          <Image src={ITContact} alt="Foto 2"/>
+          <p>Contact ITResearch</p>
+            </a>
+        </div>
+        </a>
+        <div class="photo-card">
+            <a href="https://www.youtube.com/@StudyMore-ul8qi" class=""> 
+          <Image src={studymore} alt="Foto 3"/>
+          <p>YouTube Study More</p>
+            </a>
+        </div>
+      </div>
+    </main>
+    
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');	
+      .round-photo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 300px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .round-photo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+  
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 1200px;
+        text-align: center;
+      }
+  
+      .card h3 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #333;
+      }
+  
+      .card p {
+        font-size: 16px;
+        color: #666;
+      }
+  
+      .photo-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        max-width: 1000px;
+      }
+  
+      .photo-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .photo-card img {
+        width: 500px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+  
+      .photo-card p {
+        font-size: 14px;
+        color: #666;
+      }
+  
+      .photo-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+        .animate-heading {
+      color: black;
+      font-size: 30px;
+      position: relative;
+      animation: textGlow 3s ease-in-out infinite, textSlideIn 1s ease-out forwards;
+      }
+
+      @keyframes textSlideIn {
+          0% {
+              opacity: 0;
+              transform: translateX(-100%);
+          }
+          100% {
+              opacity: 1;
+              transform: translateX(0);
+          }
+      }
+
+
+    </style>
+</Layout>
